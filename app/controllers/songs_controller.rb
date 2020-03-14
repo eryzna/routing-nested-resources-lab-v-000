@@ -4,6 +4,7 @@ class SongsController < ApplicationController
       @songs= Artist.find (params[artist_id]).songs
     else
       @songs=Songs.all
+    end
   end
 
   def show
